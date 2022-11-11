@@ -1,0 +1,1 @@
+const { Medicamento } = require("../Models");
