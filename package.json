@@ -15,7 +15,8 @@
   "description": "Back-end lugotech",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js"
+    "start": "node ./app.js"
+
   },
   "author": "Wilfredo Frias",
   "license": "ISC"
