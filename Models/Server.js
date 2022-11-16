@@ -5,7 +5,6 @@ const cors = require("cors");
 const db = require("../config/db");
 
 class Server {
-
   constructor() {
     this.app = express();
 
@@ -26,10 +25,8 @@ class Server {
   middlewares() {
     this.app.use(cors());
 
-    
-
     this.app.use(express.json());
-    
+
     this.app.use(express.urlencoded({ extended: true }));
   } //los commentarios borra todo despues
 
@@ -40,7 +37,7 @@ class Server {
 
       console.log("La conexiòn a la base de se ha realizado correctamente");
     } catch (error) {
-      console.log(error);
+      console.log("No se puedo conectar a la BD", error);
     }
   }
 
