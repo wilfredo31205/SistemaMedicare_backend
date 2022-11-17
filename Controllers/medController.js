@@ -6,7 +6,7 @@ const Medicamento = require("../Models/Medicamentos");
 
 const Addmedicament = async (req = request, res = response) => {
   const { body } = req;
-asdakfñ lkasdjfñkasdhñf asdñf hñasdj fñoksda ñvok jhasdñ vñ sadvh ñsad vñsa dvña
+
   try {
     const existMedicament = await Medicamento.findOne({
       where: {
